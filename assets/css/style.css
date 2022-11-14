@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'Arsenal-Regular';
+    src: url('../font/Arsenal-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Arsenal-Bold';
+    src: url('../font/Arsenal-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Arsenal-Italic';
+    src: url('../font/Arsenal-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Arsenal-BoldItalic';
+    src: url('../font/Arsenal-BoldItalic.ttf');
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    z-index: 2 !important;
+}
+.hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 126, 238, 0.5);
+    z-index: 1;
+}
+
+.text_hero {
+    font-weight: bold;
+    font-size: 90px;
+    z-index: 2;   
+    mix-blend-mode: soft-light; 
+}
+
+.text_italic_hero {
+    font-weight: bold;
+    font-family: 'Arsenal-Italic';
+    font-size: 50px;
+    z-index: 2;   
+    mix-blend-mode: screen; 
+}
+
+.hero_video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Esstilo de la fuebtes */
+.nav_custom {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    padding: 0 4% 0 4%;
+}
+
+.nav_link {
+    margin: 0 2% 0 2%;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.nav_link:hover  {
+    transition: 0.4s;
+    color: rgba(2, 124, 247, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav_logo {
+    width: 10%;
+}
+
+/* ESTILO DEL CUERPO */
+body {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-family: 'Arsenal-Regular';
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*  Estil o par la letras */
+.title_blue_firt {
+   font-family: 'Arsenal-Bold';
+    font-size: 40px;
+    color:rgba(2, 124, 247, 0.882)
+}
+.title_section {
+   font-family: 'Arsenal-Bold';
+    font-size: 40px;
+    color: white;
+}
+
+/*  Estilo de botones y campos */
+.button_link {
+    width: 180px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid white;
+    font-family: 'Arsenal-Regular';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.button_link:hover {
+    background-color: rgb(161, 205, 67);
+    color: black;
+    font-family: 'Arsenal-Bold';
+    transition: 0.4s;
+    box-shadow: -2px 2px 0 white;
+}
+
+.btn_primary {
+    width: 180px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid white;
+    font-family: 'Arsenal-Regular';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn_primary:hover {
+    background-color: rgb(161, 205, 67);
+    color: black;
+    font-family: 'Arsenal-Bold';
+    transition: 0.4s;
+    box-shadow: -2px 2px 0 white;
+}
+
+.input_primary {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.input_primary:focus {
+    outline: none;
+}
+/*  Fin */
+
+.img_family {
+    width: 60%;
+    height: 100%;
+    box-shadow: -6px 5px 0 white;
+    border-radius: 12px;
+}
+
+.section_radio {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../img/radio.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.section_radio:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 126, 238, 0.5);
+    z-index: -1;
+}
+
+.content_border {
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 2%;
+}
+
+/*  Section igleia */
+.card_iglesia {
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+/* Section vision */
+.card_vision {
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    padding: 4%;
+}
+.card_vision:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 102, 225, 0.789);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.card_title {
+    font-family: 'Arsenal-Bold';
+    font-size: 25px;
+    text-decoration: line ;
+    text-decoration-color: rgb(161, 205, 67);
+}
+
+.card_text {
+    font-family: 'Arsenal-Italic';
+    text-align: justify;
+}
+
+/* Section Contact */
+.section_contact {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../img/contact.jpg');
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+.section_contact:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 126, 238, 0.5);
+    z-index: -1;
+}
+
+/* Estilo del footer */
+.footer_custom {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2% 2% 0 2%;
+    color: black;
+}
+
+.img_logo_footer {
+    width: 50%;
+}
+
+.title_footer {
+    font-family: 'Arsenal-BoldItalic';
+    font-size: 25px;
+    color:rgba(2, 124, 247, 1);
+}
+
+.footer_link {
+    font-family: 'Arsenal-Bold';
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+    margin: 1% 0 1% 0;
+}
+.footer_link:hover {
+    transition: 0.4s;
+    text-decoration: none;
+    color:rgb(161, 205, 67);
+}
+
+.subfooter {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+blockquote {
+    font-family: 'Arsenal-Bold';
+    font-size: 18px;
+}
+
+/* Estilo de servicio */
+.hero_pageinter {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+}
+.hero_pageinter:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(6, 126, 238, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.video_hero_int {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo de sect]ion escuela */
+.section_escuela {
+    min-height: 100vh;
+    position: relative;
+}
+
+.card_school {
+    height: 40vh;
+    position: relative;
+
+}
+
+.title_card_schol   {
+    font-size: 24px !important;
+}
+
+.title_card_schol  .title_blue_firt {
+    font-size: 24px !important;
+}
+
+.circle_arrow_left {
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(2, 124, 247, 0.882);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    mix-blend-mode: screen;
+}
+
+.circle_arrow_down_left {
+    position: absolute;
+    top: 28%;
+    right: 12%;
+    width: 80px;
+    height: 80px;
+    background-color:  rgba(2, 124, 247, 0.882);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    mix-blend-mode: screen;
+    transform: rotate(88deg);
+}
+
+.circle_arrow_down_right {
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(2, 124, 247, 0.882);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    mix-blend-mode: screen;
+    transform: rotate(180deg);
+}
+
+/* Section contacta */
+.link_icon {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+    margin: 3% 0 3% 0;
+    font-family: 'Arsenal-Italic';
+}
+.link_icon:hover {
+    color:rgb(161, 205, 67);
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.size_map { 
+    width: 80%;
+    height: 600px;
+    border-radius: 14px;
+    box-shadow: -2px 2px 1px white;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+    .text_hero  {
+        font-size: 30px;
+    }
+    .text_italic_hero {
+        font-size: 25px;
+    }
+
+    .title_blue_firt {
+        font-size: 25px;
+    }
+    .title_section {
+        font-size: 25px;
+
+    }
+
+    .footer_link {
+        font-size: 14px;
+    }
+
+    .title_footer {
+        font-size: 18px;
+    }
+
+    blockquote {
+        font-size: 14px;
+    }
+
+    .nav_logo {
+        width: 50%;
+    }
+    
+
+    .link_main {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .link_main:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav_body {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        left: 0;
+        top: 10%;
+        background-color: white;
+        color: black;
+
+    }
+}
